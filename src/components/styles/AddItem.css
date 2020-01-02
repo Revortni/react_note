@@ -1,0 +1,18 @@
+.add_item {
+  margin-bottom: 20px;
+  font-size: 20px;
+  padding: 0 15px;
+  margin-bottom: 50px;
+}
+
+.add_item input {
+  margin-top: 10px;
+  padding: 30px 20px;
+  font-size: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  height: 30px;
+  box-shadow: 1px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 10px;
+}

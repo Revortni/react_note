@@ -1,0 +1,15 @@
+.container {
+  width: 73.125em;
+  margin: 0 auto;
+}
+
+.app {
+  width: 100%;
+  min-width: 73.125em;
+}
+
+.clearfix::after {
+  content: '';
+  clear: both;
+  display: table;
+}

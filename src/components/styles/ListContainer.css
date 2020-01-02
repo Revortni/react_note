@@ -1,0 +1,59 @@
+.todo-list {
+  background-color: white;
+  border: 1px solid #efefef;
+  box-shadow: 1px rgba(0, 0, 0, 0.15);
+  padding: 30px 50px;
+  margin: 0 15px;
+}
+
+.todo-item {
+  width: 100%;
+  border-bottom: 1px solid #cecece;
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 20px;
+  color: #333333;
+  padding: 10px;
+}
+
+.todo-item-left {
+  float: left;
+}
+
+.todo-item-left span {
+  display: inline;
+  line-height: 44px;
+}
+
+.removeTask {
+  float: right;
+  background-color: #ff0000;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 7px;
+}
+
+input[type='checkbox'] {
+  margin-right: 10px;
+  width: 22px;
+  height: 22px;
+  vertical-align: middle;
+}
+
+.completedTask {
+  text-decoration: line-through;
+}
+
+.no_data {
+  width: 100%;
+  border-bottom: 1px solid #cecece;
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 20px;
+  color: #333333;
+  padding: 10px;
+}
