@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ListContainer = props => {
+const ListContainer = () => {
   return <div className='no_data'>You don't have any tasks.</div>;
 };
 

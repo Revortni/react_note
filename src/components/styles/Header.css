@@ -12,7 +12,7 @@ header {
 }
 
 .header_option {
-  padding: 20px 15px 20px 15px;
+  padding: 20px 25px;
   float: left;
   font-size: 18px;
   line-height: 40px;
@@ -20,7 +20,7 @@ header {
 }
 
 .activeOption {
-  padding: 15px 15px 20px 15px;
+  padding-top: 15px;
   border-top: 5px solid #4cf;
 }
 

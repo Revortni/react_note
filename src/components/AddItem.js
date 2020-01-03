@@ -16,9 +16,11 @@ class AddItem extends Component {
   };
 
   handleSubmit = e => {
-    if (e.keyCode === 13 && this.state.content.length > 0) {
-      this.props.handleSubmit(this.state.content);
-      this.setState({ content: '' });
+    if (e.keyCode === 13 || e.type === 'click') {
+      if (this.state.content.length > 0) {
+        this.props.handleSubmit(this.state.content);
+        this.setState({ content: '' });
+      }
     }
   };
 
@@ -34,6 +36,10 @@ class AddItem extends Component {
             onKeyDown={this.handleSubmit}
             placeholder='Add a task'
           />
+
+          <div className='add_item_button' onClick={this.handleSubmit}>
+            Add
+          </div>
         </div>
       </div>
     );

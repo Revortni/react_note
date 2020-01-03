@@ -20,21 +20,21 @@
   float: left;
 }
 
-.todo-item-left span {
-  display: inline;
-  line-height: 44px;
-}
-
 .removeTask {
   float: right;
-  background-color: #ff0000;
+  color: #000;
   cursor: pointer;
   border-radius: 50%;
-  width: 30px;
-  height: 30px;
+  width: 28px;
+  height: 28px;
   text-align: center;
-  font-weight: bold;
-  margin-top: 7px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.removeTask:hover {
+  background-color: #f00;
+  color: #fff;
 }
 
 input[type='checkbox'] {

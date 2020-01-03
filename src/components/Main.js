@@ -71,7 +71,7 @@ class Main extends React.Component {
       : this.state.list;
 
     const filteredByContent = data.filter(item =>
-      item.text.toLowerCase().includes(this.state.filter)
+      item.text.toLowerCase().includes(this.state.filter.toLowerCase())
     );
 
     return (

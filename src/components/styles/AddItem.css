@@ -1,18 +1,40 @@
 .add_item {
-  margin-bottom: 20px;
   font-size: 20px;
-  padding: 0 15px;
-  margin-bottom: 50px;
+  padding: 10px 15px 40px 15px;
 }
 
 .add_item input {
-  margin-top: 10px;
+  display: inline-block;
   padding: 30px 20px;
+  width: 90%;
   font-size: 20px;
-  width: 100%;
   box-sizing: border-box;
   height: 30px;
-  box-shadow: 1px rgba(0, 0, 0, 0.15);
   border: none;
   border-radius: 10px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  box-shadow: 1px rgba(0, 0, 0, 0.15);
+}
+
+.add_item_button {
+  display: inline-block;
+  background-color: #fff;
+  padding: 30px 10px;
+  text-align: center;
+  line-height: 0px;
+  width: 10%;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 10px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  background-color: #4af;
+  color: #fff;
+  font-weight: 500;
+}
+
+.add_item_button:hover {
+  cursor: pointer;
+  background-color: #4cf;
 }
