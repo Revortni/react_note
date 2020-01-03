@@ -2,8 +2,8 @@ import React from 'react';
 import './styles/SearchItem.css';
 const SearchItem = props => {
   const handleSearch = e => {
-    let val = e.target.value;
-    props.handleSearchItem(val);
+    let filter = e.target.value;
+    props.handleSearchItem(filter);
   };
 
   return (

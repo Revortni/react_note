@@ -11,9 +11,9 @@
   border-bottom: 1px solid #cecece;
   font-family: Roboto;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 24px;
   color: #333333;
-  padding: 10px;
+  padding: 20px 0;
 }
 
 .todo-item-left {
@@ -45,7 +45,7 @@ input[type='checkbox'] {
 }
 
 .completedTask {
-  text-decoration: line-through;
+  text-decoration: line-through #5a5a5a;
 }
 
 .no_data {

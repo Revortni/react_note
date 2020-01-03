@@ -1,14 +1,6 @@
 import React from 'react';
+import HeaderTab from './HeaderTab';
 import './styles/Header.css';
-
-const HeaderOption = props => {
-  let active = props.active ? ' activeOption' : '';
-  return (
-    <div className={'header_option' + active} onClick={props.onClick}>
-      {props.name}
-    </div>
-  );
-};
 
 class Header extends React.Component {
   constructor(props) {
@@ -45,7 +37,7 @@ class Header extends React.Component {
           <div className='header_title'>Todo List</div>
           <div className='header_option_wrapper'>
             {this.options.map(item => (
-              <HeaderOption
+              <HeaderTab
                 name={item.name}
                 onClick={() => this.setOption(item)}
                 key={item.name}

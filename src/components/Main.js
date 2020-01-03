@@ -11,7 +11,7 @@ class Main extends React.Component {
     super();
     this.state = {
       list: todoData,
-      filtered: [],
+      filtered: todoData,
       filter: '',
       completedFilter: 'all',
       completedFilterActive: false
@@ -25,19 +25,41 @@ class Main extends React.Component {
       }
       return item;
     });
-    this.setState({ list });
+    this.setState({ list }, this.filterItems);
   };
 
   removeItem = id => {
     let list = this.state.list.filter(item => id !== item.id);
-    this.setState({
-      list
-    });
+    this.setState(
+      {
+        list
+      },
+      this.filterItems
+    );
   };
 
-  filterItems = val => {
+  setCompletedFilter = filter => {
+    this.setState(
+      {
+        completedFilter: filter,
+        completedFilterActive: filter === 'all' ? false : true
+      },
+      this.filterItems
+    );
+  };
+
+  filterItems = (filter = this.state.filter) => {
+    let list = this.state.list;
+    if (this.state.completedFilterActive) {
+      list = this.state.list.filter(
+        item => item.completed === this.state.completedFilter
+      );
+    }
+    const filtered = list.filter(item => item.text.includes(filter));
+
     this.setState({
-      filter: val
+      filtered,
+      filter
     });
   };
 
@@ -51,36 +73,22 @@ class Main extends React.Component {
       }
     ];
 
-    this.setState({
-      list
-    });
-  };
-
-  filterByCompleted = filter => {
-    this.setState({
-      completedFilter: filter,
-      completedFilterActive: filter === 'all' ? false : true
-    });
+    this.setState(
+      {
+        list
+      },
+      this.filterItems
+    );
   };
 
   render() {
-    const data = this.state.completedFilterActive
-      ? this.state.list.filter(
-          item => item.completed === this.state.completedFilter
-        )
-      : this.state.list;
-
-    const filteredByContent = data.filter(item =>
-      item.text.toLowerCase().includes(this.state.filter.toLowerCase())
-    );
-
     return (
       <React.Fragment>
-        <Header setFilter={this.filterByCompleted} />
+        <Header setFilter={this.setCompletedFilter} />
         <AddItem handleSubmit={this.handleAddItem} />
         <SearchItem handleSearchItem={this.filterItems} />
         <ListContainer
-          list={filteredByContent}
+          list={this.state.filtered}
           checkItem={this.checkItem}
           removeItem={this.removeItem}
         />

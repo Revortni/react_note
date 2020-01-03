@@ -1,22 +1,22 @@
 const todoData = [
   {
     id: 1,
-    text: 'Buy coffee',
+    text: 'Get coffee',
     completed: true
   },
   {
     id: 2,
-    text: 'Shopping',
+    text: 'Buy cake',
     completed: false
   },
   {
     id: 3,
-    text: 'Clean room',
+    text: 'Eat cake',
     completed: false
   },
   {
     id: 4,
-    text: 'Swim',
+    text: 'Repeat',
     completed: true
   }
 ];

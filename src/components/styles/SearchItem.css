@@ -1,16 +1,17 @@
 .search_item {
-  margin-bottom: 10px;
+  margin-bottom: 0px;
   font-size: 20px;
   padding: 0 15px;
 }
 
 .search_item input {
+  margin-bottom: 2px;
   padding: 30px 20px;
   font-size: 20px;
   width: 100%;
   box-sizing: border-box;
   height: 30px;
-  border-radius: 10px;
+  border-radius: 10px 10px 0 0;
   border-style: none;
   box-shadow: 1px rgba(0, 0, 0, 0.15);
 }

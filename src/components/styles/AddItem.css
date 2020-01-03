@@ -1,28 +1,24 @@
 .add_item {
   font-size: 20px;
-  padding: 10px 15px 40px 15px;
+  margin: 40px 15px;
 }
 
 .add_item input {
   display: inline-block;
-  padding: 30px 20px;
-  width: 90%;
+  padding: 20px 20px;
   font-size: 20px;
+  width: 90%;
   box-sizing: border-box;
-  height: 30px;
   border: none;
   border-radius: 10px;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
-  box-shadow: 1px rgba(0, 0, 0, 0.15);
 }
 
 .add_item_button {
   display: inline-block;
-  background-color: #fff;
-  padding: 30px 10px;
+  padding: 20px 20px;
   text-align: center;
-  line-height: 0px;
   width: 10%;
   box-sizing: border-box;
   border: none;
