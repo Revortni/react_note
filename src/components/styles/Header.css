@@ -5,27 +5,23 @@ header {
 }
 
 .header_title {
-  font-size: 30px;
-  padding: 16px 15px;
   float: left;
   cursor: pointer;
   font-weight: 700;
   color: #3a3a3a;
+  padding: 16px 15px;
+  font-size: 22px;
 }
 
 .header_option_wrapper {
-  position: absolute;
-  bottom: 0;
-  background-color: #fff;
-  display: none;
-  float: none;
+  margin-right: 15px;
+  float: right;
 }
 
 .header_option {
-  padding: 16px 32px;
+  padding: 20px 30px;
   float: left;
   font-size: 16px;
-  line-height: 24px;
   cursor: pointer;
 }
 
@@ -40,25 +36,30 @@ header {
 
 @media screen and (min-width: 1170px) {
   header {
-    margin-bottom: 20px;
+    background-color: #fff;
+    color: #3a3a3a;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
   }
 
   .header_title {
-    font-size: 30px;
-    padding: 20px 15px;
     float: left;
     cursor: pointer;
     font-weight: 700;
     color: #3a3a3a;
+    padding: 16px 15px;
+    font-size: 22px;
+  }
+
+  .header_option_wrapper {
+    margin-right: 15px;
+    float: right;
   }
 
   .header_option {
     padding: 20px 30px;
     float: left;
     font-size: 16px;
-    line-height: 40px;
     cursor: pointer;
-    display: block;
   }
 
   .activeOption {
@@ -68,13 +69,6 @@ header {
 
   .header_option:hover {
     background-color: #eee;
-  }
-
-  .header_option_wrapper {
-    margin-right: 15px;
-    float: right;
-    display: block;
-    position: static;
   }
 }
 
