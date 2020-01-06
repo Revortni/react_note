@@ -5,18 +5,19 @@ header {
 }
 
 .header_title {
-  float: left;
   cursor: pointer;
   font-weight: 700;
   color: #3a3a3a;
   padding: 16px 15px;
   font-size: 28px;
+  text-align: center;
 }
 
 .header_options_container {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
+  background-color: #fff;
 }
 
 .header_option_wrapper {
@@ -25,8 +26,8 @@ header {
 }
 
 .header_option {
-  padding: 10px;
-  font-size: 20px;
+  padding: 12px;
+  font-size: 14px;
   cursor: pointer;
   text-align: center;
 }
@@ -43,6 +44,8 @@ header {
 @media screen and (min-width: 1170px) {
   .header_title {
     font-size: 22px;
+    text-align: left;
+    float: left;
   }
 
   .header_options_container {
@@ -70,6 +73,8 @@ header {
 @media screen and (min-width: 600px) and (max-width: 1170px) {
   .header_title {
     font-size: 22px;
+    text-align: left;
+    float: left;
   }
 
   .header_options_container {
