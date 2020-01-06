@@ -41,10 +41,6 @@
   .add_item {
     font-size: 20px;
     margin: 40px 15px;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.15);
-    background-color: #fff;
   }
 
   .add_item input {
@@ -52,10 +48,6 @@
     padding: 22px;
     padding-bottom: 21px;
     font-size: 20px;
-    border: none;
-    border-radius: 10px;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
     width: 90%;
     box-sizing: border-box;
   }
@@ -63,21 +55,10 @@
   .add_item_button {
     float: right;
     padding: 20px;
-    text-align: center;
     width: 10%;
-    border: none;
-    border-radius: 10px;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    background-color: #4af;
     color: #fff;
     font-weight: 500;
     box-sizing: border-box;
-  }
-
-  .add_item_button:hover {
-    cursor: pointer;
-    background-color: #4cf;
   }
 }
 
@@ -85,40 +66,23 @@
   .add_item {
     font-size: 20px;
     margin: 40px 15px;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.15);
-    background-color: #fff;
   }
 
   .add_item input {
     float: left;
     padding: 22px;
-    padding-bottom: 22px;
+    padding-bottom: 21px;
     font-size: 20px;
-    border: none;
-    border-radius: 10px;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-    width: 78.6%;
+    width: 90%;
+    box-sizing: border-box;
   }
 
   .add_item_button {
     float: right;
     padding: 20px;
-    text-align: center;
     width: 10%;
-    border: none;
-    border-radius: 10px;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    background-color: #4af;
     color: #fff;
     font-weight: 500;
-  }
-
-  .add_item_button:hover {
-    cursor: pointer;
-    background-color: #4cf;
+    box-sizing: border-box;
   }
 }

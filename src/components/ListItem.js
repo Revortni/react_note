@@ -3,7 +3,7 @@ import React from 'react';
 function ListItem(props) {
   return (
     <div className='todo-item clearfix'>
-      <div className='todo-item-left '>
+      <div className='todo-item-left'>
         <input
           type='checkbox'
           checked={props.item.completed}

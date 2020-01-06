@@ -33,7 +33,6 @@ header {
 
 .activeOption {
   padding: 5px 10px;
-  border-top: 5px solid #4cf;
 }
 
 .header_option:hover {
@@ -60,7 +59,6 @@ header {
   }
   .activeOption {
     padding-top: 15px;
-    border-top: 5px solid #4cf;
     width: auto;
   }
 }
@@ -85,7 +83,6 @@ header {
   }
   .activeOption {
     padding-top: 15px;
-    border-top: 5px solid #4cf;
     width: auto;
   }
 }
