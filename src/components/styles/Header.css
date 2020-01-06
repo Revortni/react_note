@@ -13,7 +13,7 @@ header {
   font-size: 28px;
 }
 
-.header_option_container {
+.header_options_container {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -33,6 +33,7 @@ header {
 
 .activeOption {
   padding: 5px 10px;
+  border-top: 5px solid #4cf;
 }
 
 .header_option:hover {
@@ -43,23 +44,26 @@ header {
   .header_title {
     font-size: 22px;
   }
-  .header_option_container {
+
+  .header_options_container {
     margin-right: 15px;
     float: right;
-    display: block;
     position: static;
     width: auto;
   }
+
+  .header_option_wrapper {
+    width: auto;
+    float: left;
+  }
+
   .header_option {
     padding: 20px 30px;
-    float: left;
     font-size: 16px;
     cursor: pointer;
-    width: auto;
   }
   .activeOption {
     padding-top: 15px;
-    width: auto;
   }
 }
 
@@ -67,7 +71,8 @@ header {
   .header_title {
     font-size: 22px;
   }
-  .header_option_container {
+
+  .header_options_container {
     margin-right: 15px;
     float: right;
     display: block;
@@ -76,13 +81,16 @@ header {
   }
   .header_option {
     padding: 20px 30px;
-    float: left;
     font-size: 16px;
     cursor: pointer;
-    width: auto;
   }
+
+  .header_option_wrapper {
+    width: auto;
+    float: left;
+  }
+
   .activeOption {
     padding-top: 15px;
-    width: auto;
   }
 }
