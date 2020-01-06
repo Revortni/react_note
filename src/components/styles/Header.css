@@ -2,21 +2,30 @@ header {
   background-color: #fff;
   color: #3a3a3a;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
-  margin-bottom: 20px;
 }
 
 .header_title {
   font-size: 30px;
-  padding: 20px 15px;
+  padding: 16px 15px;
   float: left;
   cursor: pointer;
+  font-weight: 700;
+  color: #3a3a3a;
+}
+
+.header_option_wrapper {
+  position: absolute;
+  bottom: 0;
+  background-color: #fff;
+  display: none;
+  float: none;
 }
 
 .header_option {
-  padding: 20px 30px;
+  padding: 16px 32px;
   float: left;
-  font-size: 18px;
-  line-height: 40px;
+  font-size: 16px;
+  line-height: 24px;
   cursor: pointer;
 }
 
@@ -29,7 +38,52 @@ header {
   background-color: #eee;
 }
 
-.header_option_wrapper {
-  margin-right: 15px;
-  float: right;
+@media screen and (min-width: 1170px) {
+  header {
+    margin-bottom: 20px;
+  }
+
+  .header_title {
+    font-size: 30px;
+    padding: 20px 15px;
+    float: left;
+    cursor: pointer;
+    font-weight: 700;
+    color: #3a3a3a;
+  }
+
+  .header_option {
+    padding: 20px 30px;
+    float: left;
+    font-size: 16px;
+    line-height: 40px;
+    cursor: pointer;
+    display: block;
+  }
+
+  .activeOption {
+    padding-top: 15px;
+    border-top: 5px solid #4cf;
+  }
+
+  .header_option:hover {
+    background-color: #eee;
+  }
+
+  .header_option_wrapper {
+    margin-right: 15px;
+    float: right;
+    display: block;
+    position: static;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1170px) {
+  .header_option_wrapper {
+    display: block;
+    margin-right: 15px;
+    float: right;
+    display: block;
+    position: static;
+  }
 }

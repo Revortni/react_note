@@ -12,9 +12,7 @@ class Main extends React.Component {
     this.state = {
       list: todoData,
       filtered: todoData,
-      filter: '',
-      completedFilter: 'all',
-      completedFilterActive: false
+      filter: ''
     };
   }
 
